@@ -1,0 +1,100 @@
+# Common definitions
+
+In this section, we describe syntactic rules
+shared across every logic formalism.
+
+## Characters
+
+Parsers MUST be able to accept sequence of _characters_ (see definition below)
+which represent temporal logic formulae.
+A _character_ 
+is an atomic unit of text as specified by ISO/IEC 10646:2020
+[@ISOUNICODE].
+Legal characters are tab, carriage return, line feed, and the ASCII characters 
+of Unicode and ISO/IEC 10646.
+
+The range of characters to be supported
+is defined as:
+```
+Char ::= [#x9 | #xA | #xD | [#x20-#x7e]
+```
+
+That is, the character tabulation, line feed, carriage return,
+and all the printable ASCII characters.
+
+## Boolean constants
+
+For LTL and PLTL,
+we use `true` and `false` to denote boolean constants.
+For LDL and PLDL, we make a further distinction 
+between _propositional_ 
+booleans, denoted by `true` and `false`,
+and _logical_ booleans, denoted by `tt` and `ff`.
+
+```
+True  ::= "true"
+False ::= "false"
+TT    ::= "tt"
+FF    ::= "ff"
+PropBooleans  ::= TRUE | FALSE
+LogicBooleans ::= TT | FF
+```
+
+## Atomic Propositions
+
+An atomic proposition is a string of characters. 
+In particular, it can be:
+
+- any string of printable characters, excepted the quotation character used (see `QuotedName`)
+- any string of at least one character that starts with `[A-Za-z_]`
+  and continues with `[A-Za-z0-9_]`.
+
+```
+NameStartChar ::= [A-Z] | [a-z] | "_"
+NameChar ::= NameStartChar | [0-9]
+Name ::= NameStartChar (NameChar)*
+QuotedName ::= ('"' [^"\n\t\r]* '"') | ("'" [^'\n\t\r]* "'")
+Atom ::= Name | QuotedName
+```
+
+## Boolean operators
+
+The supported boolean operations 
+are: negation, conjunction, disjunction,
+implication, equivalence and exclusion.
+
+Follows the list of characters used
+for each operator:
+
+- negation: `!`, `~`;
+- conjunction: `&`, `&&`;
+- disjunction: `|`, `||`;
+- implication: `->`, `=>`;
+- equivalence: `<->`, `<=>`;
+- exclusive disjunction: `^`;
+
+```
+Non   ::= "!" | "~"
+And   ::= "&" | "&&"
+Or    ::= "|" | "||"
+Impl  ::= "->" | "=>"
+Equiv ::= "<->" | "<=>"
+Xor   ::= "^"
+```
+
+## Parenthesis
+
+We use `(` and `)` for parenthesis.
+
+```
+LeftParen  ::= "("
+RightParen ::= ")"
+```
+
+## White Spaces
+
+It is often convenient to use "white spaces" 
+(spaces, tabs, and blank lines) to set apart the formulae for greater readability.
+These characters MUST be ignored when processing the text input.
+
+
