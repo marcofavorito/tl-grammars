@@ -396,8 +396,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,vim,visualstudiocode,latex
 
-site/
-index.html
 main.pdf
 grammars/antlr/*.py
 grammars/antlr/*.tokens
