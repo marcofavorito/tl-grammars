@@ -3,6 +3,8 @@
 This repository
 contains a standard grammar for LTL and LDL.
 
+Link to paper: https://arxiv.org/abs/2012.13638
+
 ## Build
 
 We use [Pandoc](https://pandoc.org/) to build the document in PDF and HTML formats.
