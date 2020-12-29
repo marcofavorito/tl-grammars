@@ -17,6 +17,7 @@ abstract: The heterogeneity of tools that support temporal logic formulae
   poses several challenges in terms of interoperability. This document 
   proposes standard grammars for Linear Temporal Logic (LTL) [@pnueli77] and 
   Linear Dynamic Logic [@vardi2011rise;@degiacomo2013].
+link: https://arxiv.org/abs/2012.13638
 
 include-before: |
   ```{=latex}
