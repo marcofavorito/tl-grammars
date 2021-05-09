@@ -1,0 +1,21 @@
+---
+title: Standard Grammars for Temporal Logics
+version: v0.1.0
+keywords:
+  - linear temporal logic
+  - linear dynamic logic
+  - standard grammar
+lang: en-US
+authors:
+  - github: marcofavorito
+    name: Marco Favorito
+    initials: MF
+    orcid: 0000-0001-9566-3576
+    #twitter: marcofavorit
+    website: https://marcofavorito.me
+    email: favorito@diag.uniroma1.it
+    affiliations: 
+    - Department of Computer, Control and Management Engineering - Sapienza University of Rome
+    #funders:
+    #  - Grant XXXXXXXX
+
