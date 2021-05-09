@@ -1,0 +1,22 @@
+[
+{
+  "id": "url:https://github.com/marcofavorito/docs-template",
+  "type": "webpage",
+  "URL": "https://github.com/marcofavorito/docs-template",
+  "title": "Regis Iussu Cantio Et Reliqua Canonica Arte Resoluta",
+  "container-title": "GitHub",
+  "issued": {
+    "date-parts": [
+      [
+        2021
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Marco",
+      "family": "Favorito"
+    }
+  ]
+}
+]

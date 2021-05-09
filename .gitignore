@@ -396,6 +396,36 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,vim,visualstudiocode,latex
 
+
+# Manubot
+# Generated manuscript output files
+output/*
+!output/README.md
+
+webpage/v
+
+# When PDF building fails, a temporary symlink named images in the root
+# directory is not removed.
+/images
+
+# Manubot cache directory
+ci/cache
+
+# Pandoc filters downloaded during continuous integration setup
+build/pandoc/filters/spellcheck.lua
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Misc temporary files
+*.bak
+
+# Custom
+
 main.pdf
 grammars/antlr/*.py
 grammars/antlr/*.tokens
