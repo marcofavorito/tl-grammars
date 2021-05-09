@@ -1,0 +1,946 @@
+[
+  {
+    "author": [
+      {
+        "family": "ISO/IEC"
+      }
+    ],
+    "genre": "ISO/IEC",
+    "id": "15qqhX4dZ",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "number": "10646:2020",
+    "publisher": "International Organization for Standardization",
+    "publisher-place": "Geneva, Switzerland",
+    "title": "Information technology—Universal coded character set",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: ISOUNICODE"
+  },
+  {
+    "DOI": "10.24963/ijcai.2017/189",
+    "ISBN": "9780999241103",
+    "URL": "http://dx.doi.org/10.24963/ijcai.2017/189",
+    "author": [
+      {
+        "family": "Zhu",
+        "given": "Shufang"
+      },
+      {
+        "family": "M. Tabajara",
+        "given": "Lucas"
+      },
+      {
+        "family": "Li",
+        "given": "Jianwen"
+      },
+      {
+        "family": "Pu",
+        "given": "Geguang"
+      },
+      {
+        "family": "Y. Vardi",
+        "given": "Moshe"
+      }
+    ],
+    "container-title": "Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence",
+    "id": "P1QSK3Oi",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          8
+        ]
+      ]
+    },
+    "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+    "title": "Symbolic LTLf Synthesis",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: Zhu_2017"
+  },
+  {
+    "author": [
+      {
+        "family": "Armoni",
+        "given": "Roy"
+      },
+      {
+        "family": "Fix",
+        "given": "Limor"
+      },
+      {
+        "family": "Flaisher",
+        "given": "Alon"
+      },
+      {
+        "family": "Gerth",
+        "given": "Rob"
+      },
+      {
+        "family": "Ginsburg",
+        "given": "Boris"
+      },
+      {
+        "family": "Kanza",
+        "given": "Tomer"
+      },
+      {
+        "family": "Landver",
+        "given": "Avner"
+      },
+      {
+        "family": "Mador-Haim",
+        "given": "Sela"
+      },
+      {
+        "family": "Singerman",
+        "given": "Eli"
+      },
+      {
+        "family": "Tiemeyer",
+        "given": "Andreas"
+      },
+      {
+        "family": "others"
+      }
+    ],
+    "container-title": "International Conference on Tools and Algorithms for the Construction and Analysis of Systems",
+    "id": "2uK36GRT",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "296-311",
+    "publisher": "Springer",
+    "title": "The ForSpec temporal logic: A new temporal property-specification language",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: armoni2002forspec"
+  },
+  {
+    "author": [
+      {
+        "family": "Bacchus",
+        "given": "Fahiem"
+      },
+      {
+        "family": "Boutilier",
+        "given": "Craig"
+      },
+      {
+        "family": "Grove",
+        "given": "Adam"
+      }
+    ],
+    "container-title": "Proceedings of the National Conference on Artificial Intelligence",
+    "id": "168hjLo04",
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "page": "1160-1167",
+    "title": "Rewarding behaviors",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: bacchus1996rewarding"
+  },
+  {
+    "author": [
+      {
+        "family": "Bacchus",
+        "given": "Fahiem"
+      },
+      {
+        "family": "Kabanza",
+        "given": "Froduald"
+      }
+    ],
+    "container-title": "Annals of Mathematics and Artificial Intelligence",
+    "id": "AhBHUlrI",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "page": "5-27",
+    "publisher": "Springer",
+    "title": "Planning for temporally extended goals",
+    "type": "article-journal",
+    "volume": "22",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: bacchus1998planning"
+  },
+  {
+    "author": [
+      {
+        "family": "Backus",
+        "given": "John W"
+      }
+    ],
+    "container-title": "Proceedings of the International Comference on Information Processing, 1959",
+    "id": "gB57ast8",
+    "issued": {
+      "date-parts": [
+        [
+          1959
+        ]
+      ]
+    },
+    "title": "The syntax and semantics of the proposed international algebraic language of the Zurich ACM-GAMM conference",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: backus1959syntax"
+  },
+  {
+    "URL": "https://aaai.org/ojs/index.php/AAAI/article/view/6528",
+    "author": [
+      {
+        "family": "Bansal",
+        "given": "Suguman"
+      },
+      {
+        "family": "Li",
+        "given": "Yong"
+      },
+      {
+        "family": "Tabajara",
+        "given": "Lucas M."
+      },
+      {
+        "family": "Vardi",
+        "given": "Moshe Y."
+      }
+    ],
+    "container-title": "The Thirty-Fourth AAAI Conference on Artificial Intelligence, AAAI 2020, The Thirty-Second Innovative Applications of Artificial Intelligence Conference, IAAI 2020, The Tenth AAAI Symposium on Educational Advances in Artificial Intelligence, EAAI 2020, New York, NY, USA, February 7-12, 2020",
+    "id": "GUE6h9BC",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "9766-9774",
+    "publisher": "AAAI Press",
+    "title": "Hybrid Compositional Reasoning for Reactive Synthesis from Finite-Horizon Specifications",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: bansal2020hybrid"
+  },
+  {
+    "author": [
+      {
+        "family": "Bradner",
+        "given": "Scott"
+      }
+    ],
+    "container-title": "RFC2119",
+    "id": "ab4NKd0d",
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    },
+    "title": "Key words for use in RFCs to Indicate Requirement Levels",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: bradner1997key"
+  },
+  {
+    "URL": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17342",
+    "author": [
+      {
+        "family": "Brafman",
+        "given": "Ronen"
+      },
+      {
+        "family": "De Giacomo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Patrizi",
+        "given": "Fabio"
+      }
+    ],
+    "id": "1BGowXSUK",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "LTLf/LDLf Non-Markovian Rewards",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: brafman2018"
+  },
+  {
+    "DOI": "10.1145/5397.5399",
+    "ISSN": "0164-0925",
+    "URL": "https://doi.org/10.1145/5397.5399",
+    "author": [
+      {
+        "family": "Clarke",
+        "given": "E. M."
+      },
+      {
+        "family": "Emerson",
+        "given": "E. A."
+      },
+      {
+        "family": "Sistla",
+        "given": "A. P."
+      }
+    ],
+    "container-title": "ACM Trans. Program. Lang. Syst.",
+    "id": "OP5gprvX",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    },
+    "page": "244263",
+    "publisher": "Association for Computing Machinery",
+    "publisher-place": "New York, NY, USA",
+    "title": "Automatic Verification of Finite-State Concurrent Systems Using Temporal Logic Specifications",
+    "type": "article-journal",
+    "volume": "8",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: clarke1986"
+  },
+  {
+    "URL": "https://dwheeler.com/essays/dont-use-iso-14977-ebnf.html",
+    "author": [
+      {
+        "family": "Wheeler",
+        "given": "David"
+      }
+    ],
+    "id": "tLF2Ebsw",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Don’t Use ISO/IEC 14977 Extended Backus-Naur Form (EBNF)",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: david_dont_2020",
+    "type": "entry"
+  },
+  {
+    "ISBN": "978-1-57735-633-2",
+    "URL": "http://dl.acm.org/citation.cfm?id=2540128.2540252",
+    "author": [
+      {
+        "family": "De Giacomo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Vardi",
+        "given": "Moshe Y."
+      }
+    ],
+    "collection-title": "IJCAI ’13",
+    "container-title": "Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence",
+    "id": "1OF95HV9",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "page": "854-860",
+    "publisher": "AAAI Press",
+    "publisher-place": "Beijing, China",
+    "title": "Linear Temporal Logic and Linear Dynamic Logic on Finite Traces",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: degiacomo2013"
+  },
+  {
+    "ISBN": "978-1-57735-738-4",
+    "URL": "http://dl.acm.org/citation.cfm?id=2832415.2832466",
+    "author": [
+      {
+        "family": "De Giacomo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Vardi",
+        "given": "Moshe Y."
+      }
+    ],
+    "collection-title": "IJCAI’15",
+    "container-title": "Proceedings of the 24th International Conference on Artificial Intelligence",
+    "id": "14SRO4NjV",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "1558-1564",
+    "publisher": "AAAI Press",
+    "publisher-place": "Buenos Aires, Argentina",
+    "title": "Synthesis for LTL and LDL on Finite Traces",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: degiacomo2015"
+  },
+  {
+    "DOI": "10.24963/ijcai.2020/690",
+    "ISBN": "['9780999241165']",
+    "URL": "http://dx.doi.org/10.24963/ijcai.2020/690",
+    "author": [
+      {
+        "family": "De Giacomo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Di Stasio",
+        "given": "Antonio"
+      },
+      {
+        "family": "Fuggitti",
+        "given": "Francesco"
+      },
+      {
+        "family": "Rubin",
+        "given": "Sasha"
+      }
+    ],
+    "container-title": "Twenty-Ninth International Joint Conference on Artificial Intelligence and Seventeenth Pacific Rim International Conference on Artificial Intelligence IJCAI-PRICAI-20",
+    "event-place": "Yokohama, Japan",
+    "id": "5SVSg4uI",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          7
+        ]
+      ]
+    },
+    "publisher": "International Joint Conferences on Artificial Intelligence Organization",
+    "title": "Pure-Past Linear Temporal and Dynamic Logic on Finite Traces",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: degiacomo2020"
+  },
+  {
+    "author": [
+      {
+        "family": "Duret-Lutz",
+        "given": "Alexandre"
+      }
+    ],
+    "id": "K9tJcZXv",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "publisher": "Tech. rep. Available online: https://spot.lrde.epita.fr/tl.pdf",
+    "title": "Spot’s Temporal Logic Formulas",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: duret2016spot"
+  },
+  {
+    "author": [
+      {
+        "family": "Duret-Lutz",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Lewkowicz",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Fauchille",
+        "given": "Amaury"
+      },
+      {
+        "family": "Michaud",
+        "given": "Thibaud"
+      },
+      {
+        "family": "Renault",
+        "given": "Etienne"
+      },
+      {
+        "family": "Xu",
+        "given": "Laurent"
+      }
+    ],
+    "container-title": "International Symposium on Automated Technology for Verification and Analysis",
+    "id": "1nCDQOaQ",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "122-129",
+    "publisher": "Springer",
+    "title": "Spot 2.0A Framework for LTL and 19970\\\\backslash 19970-Automata Manipulation",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: duret2016spotb"
+  },
+  {
+    "author": [
+      {
+        "family": "Favorito",
+        "given": "Marco"
+      }
+    ],
+    "container-title": "Master’s thesis. DIAG, Sapienza Univ. Rome",
+    "id": "tQUxH4uJ",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Reinforcement learning for LTLf/LDLf goals: Theory and implementation",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: favorito2018reinforcement"
+  },
+  {
+    "URL": "https://github.com/RiccardoDeMasellis/FLLOAT",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          23
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "De Masellis",
+        "given": "Riccardo"
+      }
+    ],
+    "id": "JpqAsXAP",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "RiccardoDeMasellis/FLLOAT",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: flloat2015",
+    "type": "entry"
+  },
+  {
+    "URL": "https://github.com/whitemech/LTLf2DFA",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          23
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Fuggitti",
+        "given": "Francesco"
+      }
+    ],
+    "id": "IdVWqj2A",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "note": "original-date: 2018-04-13T07:37:54Z\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: fuggitti_whitemechltlf2dfa_2018",
+    "publisher": "WhiteMech",
+    "title": "LTLf2DFA",
+    "type": "entry"
+  },
+  {
+    "ISBN": "0321773713",
+    "author": [
+      {
+        "family": "Holzmann",
+        "given": "Gerard"
+      }
+    ],
+    "edition": "1st",
+    "id": "P4zvaeo5",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "publisher": "Addison-Wesley Professional",
+    "title": "The SPIN Model Checker: Primer and Reference Manual",
+    "type": "book",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: holzmann2011"
+  },
+  {
+    "DOI": "10.1109/ieeestd.2010.5446004",
+    "ISBN": "['9780738162553']",
+    "URL": "http://dx.doi.org/10.1109/ieeestd.2010.5446004",
+    "author": [
+      {
+        "family": "IEEE"
+      }
+    ],
+    "id": "1DqpX0IVA",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "publisher": "IEEE",
+    "title": "IEEE Standard for Property Specification Language (PSL)",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: ieee2010"
+  },
+  {
+    "author": [
+      {
+        "family": "ISO",
+        "given": "Extended BNF"
+      }
+    ],
+    "container-title": "ISO: Geneva",
+    "id": "bEpoSxy4",
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "title": "ISO/IEC 14977: 1996 (E)",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: iso1996iso"
+  },
+  {
+    "author": [
+      {
+        "family": "Jacobs",
+        "given": "Swen"
+      },
+      {
+        "family": "Klein",
+        "given": "Felix"
+      },
+      {
+        "family": "Schirmer",
+        "given": "Sebastian"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1604.02284",
+    "id": "q3fJrjql",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "A high-level LTL synthesis format: TLSF v1. 1",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: jacobs2016high"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1005.3199v3",
+    "author": [
+      {
+        "family": "Konur",
+        "given": "Savas"
+      }
+    ],
+    "id": "1GURnqq7x",
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          5
+        ]
+      ]
+    },
+    "note": "Frontiers of Computer Science 7(3): 370-403 (2013)\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: konur2010",
+    "title": "A Survey on Temporal Logics",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/978-3-030-01090-4\\textbackslash{}\\_34",
+    "URL": "https://doi.org/10.1007/978-3-030-01090-4\\textbackslash{}\\_34",
+    "author": [
+      {
+        "family": "Kretinsky",
+        "given": "Jan"
+      },
+      {
+        "family": "Meggendorfer",
+        "given": "Tobias"
+      },
+      {
+        "family": "Sickert",
+        "given": "Salomon"
+      }
+    ],
+    "collection-title": "Lecture Notes in Computer Science",
+    "container-title": "Automated Technology for Verification and Analysis - 16th International Symposium, ATVA 2018, Los Angeles, CA, USA, October 7-10, 2018, Proceedings",
+    "editor": [
+      {
+        "family": "Lahiri",
+        "given": "Shuvendu K."
+      },
+      {
+        "family": "Wang",
+        "given": "Chao"
+      }
+    ],
+    "id": "1e6UFQoI",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "543-550",
+    "publisher": "Springer",
+    "title": "Owl: A Library for omega-Words, Automata, and LTL",
+    "type": "paper-conference",
+    "volume": "11138",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: owl2018"
+  },
+  {
+    "author": [
+      {
+        "family": "Pešić",
+        "given": "Maja"
+      },
+      {
+        "family": "Bošnački",
+        "given": "Dragan"
+      },
+      {
+        "dropping-particle": "van der",
+        "family": "Aalst",
+        "given": "Wil MP"
+      }
+    ],
+    "container-title": "International SPIN Workshop on Model Checking of Software",
+    "id": "9WLHzxrl",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "146-161",
+    "publisher": "Springer",
+    "title": "Enacting declarative languages using LTL: avoiding errors and improving performance",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: pevsic2010enacting"
+  },
+  {
+    "DOI": "10.1109/sfcs.1977.32",
+    "URL": "http://dx.doi.org/10.1109/sfcs.1977.32",
+    "author": [
+      {
+        "family": "Pnueli",
+        "given": "Amir"
+      }
+    ],
+    "container-title": "18th Annual Symposium on Foundations of Computer Science (sfcs 1977)",
+    "event-place": "Providence, RI, USA",
+    "id": "MY0lZLsU",
+    "issued": {
+      "date-parts": [
+        [
+          1977,
+          10
+        ]
+      ]
+    },
+    "publisher": "IEEE",
+    "title": "The temporal logic of programs",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: pnueli77"
+  },
+  {
+    "URL": "https://semver.org/",
+    "abstract": "Semantic Versioning spec and website",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          24
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Preston-Werner",
+        "given": "Tom"
+      }
+    ],
+    "container-title": "Semantic Versioning",
+    "id": "z3JdY0ZA",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "title": "Semantic Versioning 2.0.0",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: preston-werner_semantic_nodate",
+    "type": "entry"
+  },
+  {
+    "URL": "https://semverdoc.org/semverdoc.html",
+    "abstract": "Semantic Versioning and Meaningful Manual Version Control for Documents",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          24
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Tekampe",
+        "given": "Nils"
+      }
+    ],
+    "container-title": "SemVerDoc",
+    "id": "r8oAGYhf",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Semantic Versioning for Documents 1.0.0",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: tekampe_semantic_nodate",
+    "type": "entry"
+  },
+  {
+    "ISBN": "978-1-936213-26-9",
+    "URL": "https://www.unicode.org/versions/Unicode13.0.0/",
+    "author": [
+      {
+        "literal": "The Unicode Consortium"
+      }
+    ],
+    "id": "TjjbfWlM",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "The Unicode Standard, Version 13.0.0",
+    "type": "book",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: unicode2020"
+  },
+  {
+    "author": [
+      {
+        "family": "Vardi",
+        "given": "Moshe Y"
+      }
+    ],
+    "container-title": "GandALF",
+    "id": "SgNUEvas",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "title": "The rise and fall of LTL",
+    "type": "article-journal",
+    "volume": "54",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: vardi2011rise"
+  },
+  {
+    "URL": "https://www.w3.org/TR/xml/",
+    "accessed": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          22
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "W3C"
+      }
+    ],
+    "id": "G296g60u",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "title": "Extensible Markup Language (XML) 1.0 (Fifth Edition)",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: xml",
+    "type": "entry"
+  },
+  {
+    "author": [
+      {
+        "family": "Zaytsev",
+        "given": "Vadim"
+      }
+    ],
+    "container-title": "Proceedings of the 27th Annual ACM Symposium on Applied Computing",
+    "id": "g9olcqWk",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "1910-1915",
+    "title": "BNF was here: what have we done about the unnecessary diversity of notation for syntactic definitions",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: zaytsev2012bnf"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "pandoc": {
+    "title": "Standard Grammars for Temporal Logics",
+    "keywords": [
+      "linear temporal logic",
+      "linear dynamic logic",
+      "standard grammar"
+    ],
+    "lang": "en-US",
+    "date-meta": "2021-05-09",
+    "author-meta": [
+      "Marco Favorito"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Standard Grammars for Temporal Logics\" />\n<meta name=\"citation_title\" content=\"Standard Grammars for Temporal Logics\" />\n<meta property=\"og:title\" content=\"Standard Grammars for Temporal Logics\" />\n<meta property=\"twitter:title\" content=\"Standard Grammars for Temporal Logics\" />\n<meta name=\"dc.date\" content=\"2021-05-09\" />\n<meta name=\"citation_publication_date\" content=\"2021-05-09\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Marco Favorito\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer, Control and Management Engineering - Sapienza University of Rome\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9566-3576\" />\n<link rel=\"canonical\" href=\"https://marcofavorito.github.io/tl-grammars/\" />\n<meta property=\"og:url\" content=\"https://marcofavorito.github.io/tl-grammars/\" />\n<meta property=\"twitter:url\" content=\"https://marcofavorito.github.io/tl-grammars/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://marcofavorito.github.io/tl-grammars/\" />\n<meta name=\"citation_pdf_url\" content=\"https://marcofavorito.github.io/tl-grammars/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://marcofavorito.github.io/tl-grammars/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.bib",
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "May 9, 2021",
+    "authors": [
+      {
+        "github": "marcofavorito",
+        "name": "Marco Favorito",
+        "initials": "MF",
+        "orcid": "0000-0001-9566-3576",
+        "website": "https://marcofavorito.me",
+        "email": "favorito@diag.uniroma1.it",
+        "affiliations": [
+          "Department of Computer, Control and Management Engineering - Sapienza University of Rome"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Computer, Control and Management Engineering - Sapienza University of Rome",
+        "affiliation_number": 1
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "marcofavorito/tl-grammars",
+      "repo_owner": "marcofavorito",
+      "repo_name": "tl-grammars",
+      "commit": "727f23afc78dc4b39111f6bb77be269649b6287c",
+      "triggering_commit": "727f23afc78dc4b39111f6bb77be269649b6287c",
+      "build_url": "https://github.com/marcofavorito/tl-grammars/commit/727f23afc78dc4b39111f6bb77be269649b6287c/checks",
+      "job_url": "https://github.com/marcofavorito/tl-grammars/runs/run3"
+    },
+    "html_url": "https://marcofavorito.github.io/tl-grammars/",
+    "pdf_url": "https://marcofavorito.github.io/tl-grammars/manuscript.pdf",
+    "html_url_versioned": "https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/",
+    "pdf_url_versioned": "https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/manuscript.pdf",
+    "manubot_version": "0.5.0",
+    "rootstock_commit": null,
+    "manuscript_stats": {
+      "word_count": 1982
+    }
+  },
+  "version": "v0.1.1"
+}
