@@ -5,7 +5,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://marcofavorito.github.io/tl-grammars/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://marcofavorito.github.io/tl-grammars/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/marcofavorito/tl-grammars/workflows/Manubot/badge.svg)](https://github.com/marcofavorito/tl-grammars/actions)
-[![Travis Build Status](https://travis-ci.com/marcofavorito/tl-grammars.svg?branch=main)](https://travis-ci.com/marcofavorito/tl-grammars)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 
@@ -15,6 +14,20 @@ contains a standard grammar for LTL and LDL.
 Link to the latest published version paper (on ArXiv): https://arxiv.org/abs/2012.13638
 
 Link to the latest version on GitHub: https://marcofavorito.me/tl-grammars
+
+
+## Manubot
+
+<!-- usage note: do not edit this section -->
+
+Manubot is a system for writing scholarly manuscripts via GitHub.
+Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
+An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
+The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
+See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
+
+Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
+
 
 ## Repository directories & files
 
