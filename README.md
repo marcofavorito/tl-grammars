@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/marcofavorito/tl-grammars/tree/gh-pages) branch hosts the contents of this directory at <https://marcofavorito.github.io/tl-grammars/>.
-The permalink for this webpage version is <https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/>.
+The permalink for this webpage version is <https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://marcofavorito.github.io/tl-grammars/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`727f23afc78dc4b39111f6bb77be269649b6287c`](https://github.com/marcofavorito/tl-grammars/commit/727f23afc78dc4b39111f6bb77be269649b6287c).
+[`b3e036807eebede116931db365ccc961d7677fb4`](https://github.com/marcofavorito/tl-grammars/commit/b3e036807eebede116931db365ccc961d7677fb4).
