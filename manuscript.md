@@ -35,9 +35,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://marcofavorito.github.io/tl-grammars/" />
   <meta name="citation_pdf_url" content="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/" />
-  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
+  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,11 +60,14 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://marcofavorito.github.io/tl-grammars/v/727f23afc78dc4b39111f6bb77be269649b6287c/))
+([permalink](https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/))
 was automatically generated
-from [marcofavorito/tl-grammars@727f23a](https://github.com/marcofavorito/tl-grammars/tree/727f23afc78dc4b39111f6bb77be269649b6287c)
+from [marcofavorito/tl-grammars@b3e0368](https://github.com/marcofavorito/tl-grammars/tree/b3e036807eebede116931db365ccc961d7677fb4)
 on May 9, 2021.
 </em></small>
+
+![ArXiv icon](images/arxiv.svg) [https://arxiv.org/abs/2012.13638](https://arxiv.org/abs/2012.13638)  
+![GitHub icon](images/github.svg) [marcofavorito/tl-grammars](https://github.com/marcofavorito/tl-grammars)
 
 Document version: v0.1.1
 
