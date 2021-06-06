@@ -1,6 +1,6 @@
 ---
-title: A Standard Grammars for Temporal Logics on Finite Traces
-version: v0.1.1
+title: A Standard Grammar for Temporal Logics on Finite Traces
+version: v0.2.0
 keywords:
   - linear temporal logic on finite traces
   - linear dynamic logic on finite traces
