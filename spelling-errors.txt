@@ -7,14 +7,17 @@ Favorito
 formalisms
 IEC
 LDL
+LDLf
 logics
 LTL
+LTLf
 marcofavorito
 Markovian
 Naur
 Parsers
-PLDL
+PLDLf
 PLTL
+PLTLf
 propositonal
 PSL
 Sapienza
@@ -23,3 +26,5 @@ SemVerDocs
 TLSF
 underspecifications
 UTF
+vardi
+wheras

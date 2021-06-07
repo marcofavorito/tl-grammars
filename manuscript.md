@@ -1,11 +1,12 @@
 ---
-title: Standard Grammars for Temporal Logics
+title: A Standard Grammar for Temporal Logics on Finite Traces
 keywords:
-- linear temporal logic
-- linear dynamic logic
-- standard grammar
+- linear temporal logic on finite traces
+- linear dynamic logic on finite traces
+- past linear temporal logic on finite traces
+- past linear dynamic logic on finite traces
 lang: en-US
-date-meta: '2021-05-09'
+date-meta: '2021-06-07'
 author-meta:
 - Marco Favorito
 header-includes: |-
@@ -14,12 +15,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Standard Grammars for Temporal Logics" />
-  <meta name="citation_title" content="Standard Grammars for Temporal Logics" />
-  <meta property="og:title" content="Standard Grammars for Temporal Logics" />
-  <meta property="twitter:title" content="Standard Grammars for Temporal Logics" />
-  <meta name="dc.date" content="2021-05-09" />
-  <meta name="citation_publication_date" content="2021-05-09" />
+  <meta name="dc.title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta name="citation_title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta property="og:title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta property="twitter:title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta name="dc.date" content="2021-06-07" />
+  <meta name="citation_publication_date" content="2021-06-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -35,9 +36,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://marcofavorito.github.io/tl-grammars/" />
   <meta name="citation_pdf_url" content="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
-  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/" />
+  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -60,18 +61,18 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/))
+([permalink](https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/))
 was automatically generated
-from [marcofavorito/tl-grammars@b3e0368](https://github.com/marcofavorito/tl-grammars/tree/b3e036807eebede116931db365ccc961d7677fb4)
-on May 9, 2021.
+from [marcofavorito/tl-grammars@7d9a172](https://github.com/marcofavorito/tl-grammars/tree/7d9a17267fbf525d9a6a1beb92a46f05cf652db6)
+on June 7, 2021.
 </em></small>
 
 ![ArXiv icon](images/arxiv.svg) [https://arxiv.org/abs/2012.13638](https://arxiv.org/abs/2012.13638)  
 ![GitHub icon](images/github.svg) [marcofavorito/tl-grammars](https://github.com/marcofavorito/tl-grammars)
 
-Document version: v0.1.1
+Document version: v0.2.0
 
-**WARNING**: this version v0.1.1 is a draft. 
+**WARNING**: this version v0.2.0 is a draft. 
 You are encouraged
 to email the contact author for any comment or suggestion.
 
@@ -94,7 +95,17 @@ to email the contact author for any comment or suggestion.
 
 ## Abstract {.page_break_before}
 
-The heterogeneity of tools that support temporal logic formulae poses several challenges in terms of interoperability. This document proposes standard grammars for Linear Temporal Logic (LTL) [@pnueli77] and Linear Dynamic Logic [@vardi2011rise;@degiacomo2013]
+The heterogeneity of tools that support temporal logic formulae 
+poses several challenges in terms of interoperability. 
+In particular, a standard syntax for temporal logic on finite traces,
+despite similar to the one for infinite traces, is currently missing. 
+This document proposes a standard grammar for several temporal logic formalisms
+interpreted over finite traces, like 
+Linear Temporal Logic (LTLf),
+Linear Dynamic Logic (LDLf), 
+Pure-Past Linear Temporal Logic (PLTLf)
+and Pure-Past Linear Dynamic Logic (PLDLf).
+
 
 ## Introduction
 
@@ -117,27 +128,29 @@ One of the most influential formalisms
 is Linear Temporal Logic (LTL) [@pnueli77],
 which has been applied for
 program specification and verification.
-The variant over finite
-traces has been introduced in [@degiacomo2013].
-Linear Dynamic Logic (LDL) [@vardi2011rise;@degiacomo2013]
+The variant with finite trace semantics, LTLf,
+has been introduced in [@degiacomo2013].
+
+Linear Dynamic Logic (LDL) [@vardi2011rise;]
 is the extension of LTL with regular expressions (RE).
 The idea behind LDL is to have a formalism that merges
 the declarativeness and convenience of LTL,
 as expressive as star-free RE,
 with the expressive power of RE. 
-The finite trace setting has been explored by
-[@degiacomo2013] for LTL/LDL and 
-[@degiacomo2020] for PLTL/PLDL. 
+The variant over finite traces, LDLf, has been proposed in [@degiacomo2013].
 The syntax that naturally supports
-empty traces has been employed in [@brafman2018] for LTL/LDL and 
-[@degiacomo2020] for PLTL/PLDL.
+empty traces has been employed in [@brafman2018] for LTLf/LDLf.
 
+Recently, a finite trace variant has been proposed also for
+the pure-past versions of LTLf and LDLf, namely
+Pure-Past Linear Temporal Logic (PLTLf) and
+Pure-Past Linear Dynamic Logic (PLDLf) [@degiacomo2020].
 
 The topic has gained 
 more and more attention both in academia and industry,
 also because 
 such logics have been considered compelling 
-also from a practical point of view. 
+from a practical point of view. 
 Among areas of Computer Science and Artificial Intelligence,
 we encounter reactive synthesis [@degiacomo2015],
 model checking [@clarke1986],
@@ -159,11 +172,15 @@ software tools and libraries to handle LTL and/or LDL formulas
 for a variety of purposes:
 `Spot` [@duret2016spot;@duret2016spotb],
 `Owl` [@owl2018],
-`SPIN` [@holzmann2011],
+`SPIN` [@holzmann2011]
+for the infinite-trace semantics,
+and 
 `Syft` [@Zhu_2017],
 `Lisa` [@bansal2020hybrid],
 `FLLOAT` [@flloat2015;@favorito2018reinforcement],
-`LTLf2DFA` [@fuggitti_whitemechltlf2dfa_2018], and more.
+`LTLf2DFA` [@fuggitti_whitemechltlf2dfa_2018],
+`Lydia` [@degiacomo2021compositional]
+for the finite trace setting.
 Another related work is represented by
 TLSF v1.1 [@jacobs2016high],
 although its focus is on a format for LTL synthesis problems.
@@ -189,15 +206,16 @@ this document proposes a standard grammar
 for writing temporal logic formulae.
 In particular, we specify grammars for:
 
-- Linear Temporal Logic (LTL)
-- Linear Dynamic Logic (LDL)
+- Linear Temporal Logic on finite traces (LTLf)
+- Linear Dynamic Logic on finite traces (LDLf)
+- Past Linear Temporal Logic on finite traces (PLTLf)
+- Past Linear Dynamic Logic on finite traces (PLDLf)
 
-
-In future versions of this standard, we 
-would like to provide grammars for:
-
-- Past Linear Temporal Logic (PLTL)
-- Past Linear Dynamic Logic (PLDL)
+Note that, despite the syntax is very similar between
+the finite trace and the infinite trace variants, it 
+is not the same for some operators. For instance, in LTL there is no 
+_weak next_ operator, wheras in LTLf it is the dual operator
+(under negation) of the _next_ operator.
 
 We would like this standard to be:
 
@@ -264,18 +282,20 @@ and all the printable ASCII characters.
 
 ## Boolean constants
 
-For LTL and PLTL,
-we use `true` and `false` to denote boolean constants.
-For LDL and PLDL, we make a further distinction 
-between _propositional_ 
-booleans, denoted by `true` and `false`,
-and _logical_ booleans, denoted by `tt` and `ff`.
+We use `true` and `false`, to denote _propositional_ booleans,
+and `tt` and `ff`, to denote _logical_ booleans.
+Note that `true` != `tt`, as `true` requires reading
+_any_ symbol from the trace, e.g. in LTLf, whereas `tt` 
+is the tautology. Similarly, `false` != `ff` as
+`false` requires reading no symbol, whereas `ff` is the contradiction.
+For `false` and `ff` the difference is a bit more blurred,
+but we considered it better to keep them for symmetry with the positive case.
 
 ```
-True  ::= "true"
-False ::= "false"
-TT    ::= "tt"
-FF    ::= "ff"
+True  ::= true
+False ::= false
+TT    ::= tt
+FF    ::= ff
 PropBooleans  ::= TRUE | FALSE
 LogicBooleans ::= TT | FF
 ```
@@ -286,15 +306,34 @@ An atomic proposition is a string of characters.
 In particular, it can be:
 
 - any string of printable characters, excepted the quotation character used (see `QuotedName`)
-- any string of at least one character that starts with `[A-Za-z_]`
-  and continues with `[A-Za-z0-9_]`.
+- any string of at least one character that starts with `[a-z_]`
+  and continues with `[a-z0-9_]`, and that is not a reserved keyword.
+
+Unquoted strings with some upper-case characters are excluded. 
+The reason is that some upper-case characters (e.g. `F` and `G`) 
+are reserved keywords for LTL and PLTL operators,
+and for a more intuitive usage of the grammar it is preferred to forbid
+all of them instead of asking the user to remember the relatively few exceptions.
+Moreover, the grammar should be able to support constructs like
+`FGa`, i.e. no necessary spaces between operators and symbols, for better conciseness.
+
+The reserved keywords are:
+
+- `true`, `false`, `tt`, `ff`, the boolean constants;
+- `last`, `end`, `first`, `start`, the temporal logic abbreviations;
+- `F`, `G`, `H`, `M`, `O`, `R`, `S`, `U`, `V`, `W`, `X`, `Y`, the temporal operators.
 
 ```
-NameStartChar ::= [A-Z] | [a-z] | "_"
+NameStartChar ::= [a-z] | "_"
 NameChar ::= NameStartChar | [0-9]
 Name ::= NameStartChar (NameChar)*
 QuotedName ::= ('"' [^"\n\t\r]* '"') | ("'" [^'\n\t\r]* "'")
-Atom ::= Name | QuotedName
+Keywords ::= PropBooleans
+             | LogicBooleans
+             | "last" | "end" | "first" | "start"
+             | "F" | "G" | "H" | "M" | "O" | "R" | "S" | "U" | "V" 
+             | "W" | "X" | "Y"
+Atom ::= (Name | QuotedName) - Keywords
 ```
 
 ### Boolean operators
@@ -340,13 +379,13 @@ These characters MUST be ignored when processing the text input.
 
 
 
-## LTL
+## LTLf
 
-In this section, we specify a grammar for LTL.
+In this section, we specify a grammar for LTLf.
 
 ### Atoms
 
-An LTL formula is defined over a set of _atoms_.
+An LTLf formula is defined over a set of _atoms_.
 In this context, an atom formula is defined by using 
 the `Atom` regular language defined above:
 
@@ -379,13 +418,27 @@ Eventually    ::= "F"
 Always        ::= "G"
 ```
 
+### Special Formulae
+
+Special LTLf formulae are:
+
+- `last`, meaning "the last step of the trace", semantically equivalent to `X(false)`;
+- `end`, meaning "the end of the trace", semantically equivalent to `G(false)`.
+
+In EBNF format:
+```
+Last ::= "last"
+End  ::= "end"
+```
 
 ### Grammar
 
 ```
 ltl_formula ::= LTLAtom
-                | True
-                | False
+                | PropBooleans
+                | LogicBooleans
+                | Last
+                | End
                 | LeftParen ltl_formula RightParen 
                 | Not ltl_formula 
                 | ltl_formula And ltl_formula
@@ -404,8 +457,7 @@ ltl_formula ::= LTLAtom
 ```
 
 For the semantics of these operators,
-we refer to [@pnueli77] for the 
-infinite setting, and [@degiacomo2013]
+we refer to [@degiacomo2013]
 for the finite setting.
 
 
@@ -433,13 +485,13 @@ are omitted.
 
 
 
-## LDL 
+## LDLf
 
-In this section, we specify a grammar for LDL.
+In this section, we specify a grammar for LDLf.
 
 ### Temporal operators
 
-LDL supports two temporal operators:
+LDLf supports two temporal operators:
 
 - _Diamond_ operator: `<regex>ldl_formula`;
 - _Box_ operator: `[regex]ldl_formula`;
@@ -453,7 +505,7 @@ LeftBox   ::= "["
 RightBox  ::= "]"
 ```
 
-In EBNF format, an LDL formula is defined as follows:
+In EBNF format, an LDLf formula is defined as follows:
 
 ```
 ldl_formula ::= TT
@@ -541,6 +593,165 @@ are omitted.
 
 
 
+## PLTLf
+
+In this section, we specify a grammar for PLTLf.
+
+### Atoms
+
+A PLTLf formula is defined over a set of _atoms_.
+In this context, an atom formula is defined by using 
+the `Atom` regular language defined above:
+
+```
+PLTLAtom ::= Atom
+```
+
+### Temporal operators
+
+Here we specify the regular languages for the temporal operators.
+
+- Before: `Y`;
+- Since: `S`;
+- Once: `O`;
+- Historically `H`
+
+In EBNF format:
+```
+Before       ::= "Y"
+Since        ::= "S"
+Once         ::= "O"
+Historically ::= "H"
+```
+
+
+### Special Formulae
+
+Special PLTLf formulae are:
+
+- `first`, meaning "the first step of the trace", semantically equivalent to `!B(true)`;
+- `start`, meaning "the start of the trace", semantically equivalent to `H(false)`.
+
+In EBNF format:
+```
+First ::= "first"
+Start ::= "start"
+```
+
+
+### Grammar
+
+```
+pltl_formula ::= PLTLAtom
+                 | PropBooleans
+                 | LogicBooleans
+                 | First
+                 | Start
+                 | LeftParen pltl_formula RightParen 
+                 | Not pltl_formula 
+                 | pltl_formula And pltl_formula
+                 | pltl_formula Or pltl_formula
+                 | pltl_formula Impl pltl_formula
+                 | pltl_formula Equiv pltl_formula
+                 | pltl_formula Xor pltl_formula
+                 | pltl_formula Since pltl_formula
+                 | Once pltl_formula
+                 | Historically pltl_formula
+                 | Before pltl_formula
+```
+
+For the semantics of these operators for the finite setting,
+we refer to [@degiacomo2020].
+
+
+### Precedence and associativity of operators
+
+The precedence and associativity of the LTL operators are 
+described by the following table (priorities from lowest to highest).
+For brevity, aliases for boolean operators
+are omitted.
+
+<center>
+
+|associativity|operators|
+|-|-|
+|right|`->`, `<->`|
+|left|`^`|
+|left|`|`|
+|left|`&`|
+|right |`S`|
+|right |`O`, `H`|
+|right |`B`|
+|right |`!`|
+</center>
+
+
+
+
+## PLDLf
+
+In this section, we specify a grammar for PLDLf.
+
+### Temporal operators
+
+PLDLf supports two temporal operators:
+
+- _Backward diamond_ operator: `<<regex>>pldl_formula`;
+- _Backward box_ operator: `[[regex]]pldl_formula`;
+
+`regex` is the same as defined for LDLf.
+
+```
+LeftBackwardDiam  ::= "<<"
+RightBackwardDiam ::= ">>"
+LeftBackwardBox   ::= "[["
+RightBackwardBox  ::= "]]"
+```
+
+In EBNF format, a PLDLf formula is defined as follows:
+
+```
+pldl_formula ::= TT
+               | FF
+               | LeftParen pldl_formula RightParen
+               | Not pldl_formula 
+               | pldl_formula And pldl_formula
+               | pldl_formula Or pldl_formula
+               | pldl_formula Impl pldl_formula
+               | pldl_formula Equiv pldl_formula
+               | LeftBackwardDiam regex RightBackwardDiam pldl_formula
+               | LeftBackwardBox regex RightBackwardBox pldl_formula
+```
+
+For the semantics of the operators,
+we refer to [@degiacomo2020].
+
+
+### Precedence and associativity of operators
+
+The precedence and associativity of the LDL operators are 
+described by the following table (priorities from lowest to highest).
+For brevity, aliases for boolean operators
+are omitted.
+
+<center>
+
+|associativity|operators|
+|-|-|
+|right|`->`, `<->`|
+|left|`^`|
+|left|`|`|
+|left|`&`|
+|N/A|`<<>>`, `[[]]`|
+|left|`;`|
+|left|`+`|
+|left|`*`|
+|left|`?`|
+|right|`!`|
+</center>
+
+
+
 ## Future work
 
 In future versions of this standard, we would like to add:
@@ -553,8 +764,6 @@ In future versions of this standard, we would like to add:
   like $\circ$ (U+25CB) for the Next operator
   and $\diamond$ (U+25C7) for the Eventually operator etc.
   as alternative symbols.
-- Grammars for PLTL and PLDL.
-
 
 
 ## References {.page_break_before}

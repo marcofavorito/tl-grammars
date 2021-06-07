@@ -440,6 +440,31 @@
   {
     "author": [
       {
+        "family": "De Giacomo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Favorito",
+        "given": "Marco"
+      }
+    ],
+    "container-title": "Proceedings of the International Conference on Automated Planning and Scheduling (to appear)",
+    "id": "Lv3eMyUa",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Compositional Approach to Translate LTLf/LDLf into Deterministic Finite Automata",
+    "type": "paper-conference",
+    "volume": "14",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: degiacomo2021compositional"
+  },
+  {
+    "author": [
+      {
         "family": "Duret-Lutz",
         "given": "Alexandre"
       }

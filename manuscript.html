@@ -5,9 +5,9 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Marco Favorito" />
-  <meta name="dcterms.date" content="2021-05-09" />
-  <meta name="keywords" content="linear temporal logic, linear dynamic logic, standard grammar" />
-  <title>Standard Grammars for Temporal Logics</title>
+  <meta name="dcterms.date" content="2021-06-07" />
+  <meta name="keywords" content="linear temporal logic on finite traces, linear dynamic logic on finite traces, past linear temporal logic on finite traces, past linear dynamic logic on finite traces" />
+  <title>A Standard Grammar for Temporal Logics on Finite Traces</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -24,12 +24,12 @@
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Standard Grammars for Temporal Logics" />
-  <meta name="citation_title" content="Standard Grammars for Temporal Logics" />
-  <meta property="og:title" content="Standard Grammars for Temporal Logics" />
-  <meta property="twitter:title" content="Standard Grammars for Temporal Logics" />
-  <meta name="dc.date" content="2021-05-09" />
-  <meta name="citation_publication_date" content="2021-05-09" />
+  <meta name="dc.title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta name="citation_title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta property="og:title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta property="twitter:title" content="A Standard Grammar for Temporal Logics on Finite Traces" />
+  <meta name="dc.date" content="2021-06-07" />
+  <meta name="citation_publication_date" content="2021-06-07" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@
   <meta name="citation_fulltext_html_url" content="https://marcofavorito.github.io/tl-grammars/" />
   <meta name="citation_pdf_url" content="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://marcofavorito.github.io/tl-grammars/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
-  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/" />
+  <meta name="manubot_html_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -57,19 +57,19 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Standard Grammars for Temporal Logics</h1>
+<h1 class="title">A Standard Grammar for Temporal Logics on Finite Traces</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://marcofavorito.github.io/tl-grammars/v/b3e036807eebede116931db365ccc961d7677fb4/">permalink</a>)
+(<a href="https://marcofavorito.github.io/tl-grammars/v/7d9a17267fbf525d9a6a1beb92a46f05cf652db6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/marcofavorito/tl-grammars/tree/b3e036807eebede116931db365ccc961d7677fb4">marcofavorito/tl-grammars@b3e0368</a>
-on May 9, 2021.
+from <a href="https://github.com/marcofavorito/tl-grammars/tree/7d9a17267fbf525d9a6a1beb92a46f05cf652db6">marcofavorito/tl-grammars@7d9a172</a>
+on June 7, 2021.
 </em></small></p>
 <p><img src="images/arxiv.svg" alt="ArXiv icon" /> <a href="https://arxiv.org/abs/2012.13638">https://arxiv.org/abs/2012.13638</a><br />
 <img src="images/github.svg" alt="GitHub icon" /> <a href="https://github.com/marcofavorito/tl-grammars">marcofavorito/tl-grammars</a></p>
-<p>Document version: v0.1.1</p>
-<p><strong>WARNING</strong>: this version v0.1.1 is a draft.
+<p>Document version: v0.2.0</p>
+<p><strong>WARNING</strong>: this version v0.2.0 is a draft.
 You are encouraged
 to email the contact author for any comment or suggestion.</p>
 <h2 id="authors">Authors</h2>
@@ -86,7 +86,16 @@ Department of Computer, Control and Management Engineering - Sapienza University
 </small></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>The heterogeneity of tools that support temporal logic formulae poses several challenges in terms of interoperability. This document proposes standard grammars for Linear Temporal Logic (LTL) <span class="citation" data-cites="MY0lZLsU">[<a href="#ref-MY0lZLsU" role="doc-biblioref">1</a>]</span> and Linear Dynamic Logic <span class="citation" data-cites="SgNUEvas 1OF95HV9">[<a href="#ref-SgNUEvas" role="doc-biblioref">2</a>,<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span></p>
+<p>The heterogeneity of tools that support temporal logic formulae
+poses several challenges in terms of interoperability.
+In particular, a standard syntax for temporal logic on finite traces,
+despite similar to the one for infinite traces, is currently missing.
+This document proposes a standard grammar for several temporal logic formalisms
+interpreted over finite traces, like
+Linear Temporal Logic (LTLf),
+Linear Dynamic Logic (LDLf),
+Pure-Past Linear Temporal Logic (PLTLf)
+and Pure-Past Linear Dynamic Logic (PLDLf).</p>
 <h2 id="introduction">Introduction</h2>
 <p>This section explains the motivations
 behind the existence of this standard,
@@ -95,30 +104,31 @@ describes the notation conventions
 used thorough the document,
 and lists the normative references<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <h2 id="motivation">Motivation</h2>
-<p>Temporal logics have a long history <span class="citation" data-cites="1GURnqq7x">[<a href="#ref-1GURnqq7x" role="doc-biblioref">4</a>]</span>.
+<p>Temporal logics have a long history <span class="citation" data-cites="1GURnqq7x">[<a href="#ref-1GURnqq7x" role="doc-biblioref">1</a>]</span>.
 One of the most influential formalisms
-is Linear Temporal Logic (LTL) <span class="citation" data-cites="MY0lZLsU">[<a href="#ref-MY0lZLsU" role="doc-biblioref">1</a>]</span>,
+is Linear Temporal Logic (LTL) <span class="citation" data-cites="MY0lZLsU">[<a href="#ref-MY0lZLsU" role="doc-biblioref">2</a>]</span>,
 which has been applied for
 program specification and verification.
-The variant over finite
-traces has been introduced in <span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>.
-Linear Dynamic Logic (LDL) <span class="citation" data-cites="SgNUEvas 1OF95HV9">[<a href="#ref-SgNUEvas" role="doc-biblioref">2</a>,<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>
+The variant with finite trace semantics, LTLf,
+has been introduced in <span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>.</p>
+<p>Linear Dynamic Logic (LDL) [<span class="citation" data-cites="SgNUEvas"><a href="#ref-SgNUEvas" role="doc-biblioref">4</a></span>;]
 is the extension of LTL with regular expressions (RE).
 The idea behind LDL is to have a formalism that merges
 the declarativeness and convenience of LTL,
 as expressive as star-free RE,
 with the expressive power of RE.
-The finite trace setting has been explored by
-<span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span> for LTL/LDL and
-<span class="citation" data-cites="5SVSg4uI">[<a href="#ref-5SVSg4uI" role="doc-biblioref">5</a>]</span> for PLTL/PLDL.
+The variant over finite traces, LDLf, has been proposed in <span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>.
 The syntax that naturally supports
-empty traces has been employed in <span class="citation" data-cites="1BGowXSUK">[<a href="#ref-1BGowXSUK" role="doc-biblioref">6</a>]</span> for LTL/LDL and
-<span class="citation" data-cites="5SVSg4uI">[<a href="#ref-5SVSg4uI" role="doc-biblioref">5</a>]</span> for PLTL/PLDL.</p>
+empty traces has been employed in <span class="citation" data-cites="1BGowXSUK">[<a href="#ref-1BGowXSUK" role="doc-biblioref">5</a>]</span> for LTLf/LDLf.</p>
+<p>Recently, a finite trace variant has been proposed also for
+the pure-past versions of LTLf and LDLf, namely
+Pure-Past Linear Temporal Logic (PLTLf) and
+Pure-Past Linear Dynamic Logic (PLDLf) <span class="citation" data-cites="5SVSg4uI">[<a href="#ref-5SVSg4uI" role="doc-biblioref">6</a>]</span>.</p>
 <p>The topic has gained
 more and more attention both in academia and industry,
 also because
 such logics have been considered compelling
-also from a practical point of view.
+from a practical point of view.
 Among areas of Computer Science and Artificial Intelligence,
 we encounter reactive synthesis <span class="citation" data-cites="14SRO4NjV">[<a href="#ref-14SRO4NjV" role="doc-biblioref">7</a>]</span>,
 model checking <span class="citation" data-cites="OP5gprvX">[<a href="#ref-OP5gprvX" role="doc-biblioref">8</a>]</span>,
@@ -140,13 +150,17 @@ software tools and libraries to handle LTL and/or LDL formulas
 for a variety of purposes:
 <code>Spot</code> <span class="citation" data-cites="K9tJcZXv 1nCDQOaQ">[<a href="#ref-K9tJcZXv" role="doc-biblioref">14</a>,<a href="#ref-1nCDQOaQ" role="doc-biblioref">15</a>]</span>,
 <code>Owl</code> <span class="citation" data-cites="1e6UFQoI">[<a href="#ref-1e6UFQoI" role="doc-biblioref">16</a>]</span>,
-<code>SPIN</code> <span class="citation" data-cites="P4zvaeo5">[<a href="#ref-P4zvaeo5" role="doc-biblioref">17</a>]</span>,
+<code>SPIN</code> <span class="citation" data-cites="P4zvaeo5">[<a href="#ref-P4zvaeo5" role="doc-biblioref">17</a>]</span>
+for the infinite-trace semantics,
+and
 <code>Syft</code> <span class="citation" data-cites="P1QSK3Oi">[<a href="#ref-P1QSK3Oi" role="doc-biblioref">18</a>]</span>,
 <code>Lisa</code> <span class="citation" data-cites="GUE6h9BC">[<a href="#ref-GUE6h9BC" role="doc-biblioref">19</a>]</span>,
 <code>FLLOAT</code> <span class="citation" data-cites="JpqAsXAP tQUxH4uJ">[<a href="#ref-JpqAsXAP" role="doc-biblioref">20</a>,<a href="#ref-tQUxH4uJ" role="doc-biblioref">21</a>]</span>,
-<code>LTLf2DFA</code> <span class="citation" data-cites="IdVWqj2A">[<a href="#ref-IdVWqj2A" role="doc-biblioref">22</a>]</span>, and more.
+<code>LTLf2DFA</code> <span class="citation" data-cites="IdVWqj2A">[<a href="#ref-IdVWqj2A" role="doc-biblioref">22</a>]</span>,
+<code>Lydia</code> <span class="citation" data-cites="Lv3eMyUa">[<a href="#ref-Lv3eMyUa" role="doc-biblioref">23</a>]</span>
+for the finite trace setting.
 Another related work is represented by
-TLSF v1.1 <span class="citation" data-cites="q3fJrjql">[<a href="#ref-q3fJrjql" role="doc-biblioref">23</a>]</span>,
+TLSF v1.1 <span class="citation" data-cites="q3fJrjql">[<a href="#ref-q3fJrjql" role="doc-biblioref">24</a>]</span>,
 although its focus is on a format for LTL synthesis problems.</p>
 <p>All these tools and formats assume the input formulae to be
 written in a certain grammar.
@@ -167,15 +181,16 @@ this document proposes a standard grammar
 for writing temporal logic formulae.
 In particular, we specify grammars for:</p>
 <ul>
-<li>Linear Temporal Logic (LTL)</li>
-<li>Linear Dynamic Logic (LDL)</li>
+<li>Linear Temporal Logic on finite traces (LTLf)</li>
+<li>Linear Dynamic Logic on finite traces (LDLf)</li>
+<li>Past Linear Temporal Logic on finite traces (PLTLf)</li>
+<li>Past Linear Dynamic Logic on finite traces (PLDLf)</li>
 </ul>
-<p>In future versions of this standard, we
-would like to provide grammars for:</p>
-<ul>
-<li>Past Linear Temporal Logic (PLTL)</li>
-<li>Past Linear Dynamic Logic (PLDL)</li>
-</ul>
+<p>Note that, despite the syntax is very similar between
+the finite trace and the infinite trace variants, it
+is not the same for some operators. For instance, in LTL there is no
+<em>weak next</em> operator, wheras in LTLf it is the dual operator
+(under negation) of the <em>next</em> operator.</p>
 <p>We would like this standard to be:</p>
 <ul>
 <li>An <em>open</em> standard, fostering collaboration and contributions from
@@ -192,22 +207,22 @@ aim is to propose a common denominator for
 all the grammars in use.</li>
 </ul>
 <h3 id="notation">Notation</h3>
-<p>We describe the syntax in Extended Backus-Naur Form (EBNF) <span class="citation" data-cites="gB57ast8">[<a href="#ref-gB57ast8" role="doc-biblioref">24</a>]</span>.
+<p>We describe the syntax in Extended Backus-Naur Form (EBNF) <span class="citation" data-cites="gB57ast8">[<a href="#ref-gB57ast8" role="doc-biblioref">25</a>]</span>.
 We follow the notation used for the
-specification of XML <span class="citation" data-cites="G296g60u">[<a href="#ref-G296g60u" role="doc-biblioref">25</a>]</span>; we discarded
-the EBNF standard version ISO/IEC 14977 <span class="citation" data-cites="bEpoSxy4">[<a href="#ref-bEpoSxy4" role="doc-biblioref">26</a>]</span>,
+specification of XML <span class="citation" data-cites="G296g60u">[<a href="#ref-G296g60u" role="doc-biblioref">26</a>]</span>; we discarded
+the EBNF standard version ISO/IEC 14977 <span class="citation" data-cites="bEpoSxy4">[<a href="#ref-bEpoSxy4" role="doc-biblioref">27</a>]</span>,
 as it has been often rejected by the community
 of those who write language specifications
-for a variety of reasons <span class="citation" data-cites="tLF2Ebsw g9olcqWk">[<a href="#ref-tLF2Ebsw" role="doc-biblioref">27</a>,<a href="#ref-g9olcqWk" role="doc-biblioref">28</a>]</span>.</p>
+for a variety of reasons <span class="citation" data-cites="tLF2Ebsw g9olcqWk">[<a href="#ref-tLF2Ebsw" role="doc-biblioref">28</a>,<a href="#ref-g9olcqWk" role="doc-biblioref">29</a>]</span>.</p>
 <h3 id="normative">Normative</h3>
-<p>We refer to <span class="citation" data-cites="ab4NKd0d">[<a href="#ref-ab4NKd0d" role="doc-biblioref">29</a>]</span>
+<p>We refer to <span class="citation" data-cites="ab4NKd0d">[<a href="#ref-ab4NKd0d" role="doc-biblioref">30</a>]</span>
 for requirement level key words.
 We also refer to
-Unicode standard <span class="citation" data-cites="15qqhX4dZ TjjbfWlM">[<a href="#ref-15qqhX4dZ" role="doc-biblioref">30</a>,<a href="#ref-TjjbfWlM" role="doc-biblioref">31</a>]</span>
+Unicode standard <span class="citation" data-cites="15qqhX4dZ TjjbfWlM">[<a href="#ref-15qqhX4dZ" role="doc-biblioref">31</a>,<a href="#ref-TjjbfWlM" role="doc-biblioref">32</a>]</span>
 to define legal characters.
 For versioning this standard, we
-use SemVerDocs <span class="citation" data-cites="r8oAGYhf">[<a href="#ref-r8oAGYhf" role="doc-biblioref">32</a>]</span>,
-inspired by SemVer <span class="citation" data-cites="z3JdY0ZA">[<a href="#ref-z3JdY0ZA" role="doc-biblioref">33</a>]</span>.</p>
+use SemVerDocs <span class="citation" data-cites="r8oAGYhf">[<a href="#ref-r8oAGYhf" role="doc-biblioref">33</a>]</span>,
+inspired by SemVer <span class="citation" data-cites="z3JdY0ZA">[<a href="#ref-z3JdY0ZA" role="doc-biblioref">34</a>]</span>.</p>
 <h2 id="common-definitions">Common definitions</h2>
 <p>In this section, we describe syntactic rules
 shared across every logic formalism.</p>
@@ -216,7 +231,7 @@ shared across every logic formalism.</p>
 which represent temporal logic formulae.
 A <em>character</em>
 is an atomic unit of text as specified by ISO/IEC 10646:2020
-<span class="citation" data-cites="15qqhX4dZ">[<a href="#ref-15qqhX4dZ" role="doc-biblioref">30</a>]</span>.
+<span class="citation" data-cites="15qqhX4dZ">[<a href="#ref-15qqhX4dZ" role="doc-biblioref">31</a>]</span>.
 Legal characters are tab, carriage return, line feed, and the ASCII characters
 of Unicode and ISO/IEC 10646.</p>
 <p>The range of characters to be supported
@@ -225,16 +240,18 @@ is defined as:</p>
 <p>That is, the character tabulation, line feed, carriage return,
 and all the printable ASCII characters.</p>
 <h2 id="boolean-constants">Boolean constants</h2>
-<p>For LTL and PLTL,
-we use <code>true</code> and <code>false</code> to denote boolean constants.
-For LDL and PLDL, we make a further distinction
-between <em>propositional</em>
-booleans, denoted by <code>true</code> and <code>false</code>,
-and <em>logical</em> booleans, denoted by <code>tt</code> and <code>ff</code>.</p>
-<pre><code>True  ::= &quot;true&quot;
-False ::= &quot;false&quot;
-TT    ::= &quot;tt&quot;
-FF    ::= &quot;ff&quot;
+<p>We use <code>true</code> and <code>false</code>, to denote <em>propositional</em> booleans,
+and <code>tt</code> and <code>ff</code>, to denote <em>logical</em> booleans.
+Note that <code>true</code> != <code>tt</code>, as <code>true</code> requires reading
+<em>any</em> symbol from the trace, e.g. in LTLf, whereas <code>tt</code>
+is the tautology. Similarly, <code>false</code> != <code>ff</code> as
+<code>false</code> requires reading no symbol, whereas <code>ff</code> is the contradiction.
+For <code>false</code> and <code>ff</code> the difference is a bit more blurred,
+but we considered it better to keep them for symmetry with the positive case.</p>
+<pre><code>True  ::= true
+False ::= false
+TT    ::= tt
+FF    ::= ff
 PropBooleans  ::= TRUE | FALSE
 LogicBooleans ::= TT | FF</code></pre>
 <h3 id="atomic-propositions">Atomic Propositions</h3>
@@ -242,14 +259,32 @@ LogicBooleans ::= TT | FF</code></pre>
 In particular, it can be:</p>
 <ul>
 <li>any string of printable characters, excepted the quotation character used (see <code>QuotedName</code>)</li>
-<li>any string of at least one character that starts with <code>[A-Za-z_]</code>
-and continues with <code>[A-Za-z0-9_]</code>.</li>
+<li>any string of at least one character that starts with <code>[a-z_]</code>
+and continues with <code>[a-z0-9_]</code>, and that is not a reserved keyword.</li>
 </ul>
-<pre><code>NameStartChar ::= [A-Z] | [a-z] | &quot;_&quot;
+<p>Unquoted strings with some upper-case characters are excluded.
+The reason is that some upper-case characters (e.g. <code>F</code> and <code>G</code>)
+are reserved keywords for LTL and PLTL operators,
+and for a more intuitive usage of the grammar it is preferred to forbid
+all of them instead of asking the user to remember the relatively few exceptions.
+Moreover, the grammar should be able to support constructs like
+<code>FGa</code>, i.e. no necessary spaces between operators and symbols, for better conciseness.</p>
+<p>The reserved keywords are:</p>
+<ul>
+<li><code>true</code>, <code>false</code>, <code>tt</code>, <code>ff</code>, the boolean constants;</li>
+<li><code>last</code>, <code>end</code>, <code>first</code>, <code>start</code>, the temporal logic abbreviations;</li>
+<li><code>F</code>, <code>G</code>, <code>H</code>, <code>M</code>, <code>O</code>, <code>R</code>, <code>S</code>, <code>U</code>, <code>V</code>, <code>W</code>, <code>X</code>, <code>Y</code>, the temporal operators.</li>
+</ul>
+<pre><code>NameStartChar ::= [a-z] | &quot;_&quot;
 NameChar ::= NameStartChar | [0-9]
 Name ::= NameStartChar (NameChar)*
 QuotedName ::= (&#39;&quot;&#39; [^&quot;\n\t\r]* &#39;&quot;&#39;) | (&quot;&#39;&quot; [^&#39;\n\t\r]* &quot;&#39;&quot;)
-Atom ::= Name | QuotedName</code></pre>
+Keywords ::= PropBooleans
+             | LogicBooleans
+             | &quot;last&quot; | &quot;end&quot; | &quot;first&quot; | &quot;start&quot;
+             | &quot;F&quot; | &quot;G&quot; | &quot;H&quot; | &quot;M&quot; | &quot;O&quot; | &quot;R&quot; | &quot;S&quot; | &quot;U&quot; | &quot;V&quot; 
+             | &quot;W&quot; | &quot;X&quot; | &quot;Y&quot;
+Atom ::= (Name | QuotedName) - Keywords</code></pre>
 <h3 id="boolean-operators">Boolean operators</h3>
 <p>The supported boolean operations
 are: negation, conjunction, disjunction,
@@ -278,10 +313,10 @@ RightParen ::= &quot;)&quot;</code></pre>
 <p>It is often convenient to use “white spaces”
 (spaces, tabs, and blank lines) to set apart the formulae for greater readability.
 These characters MUST be ignored when processing the text input.</p>
-<h2 id="ltl">LTL</h2>
-<p>In this section, we specify a grammar for LTL.</p>
+<h2 id="ltlf">LTLf</h2>
+<p>In this section, we specify a grammar for LTLf.</p>
 <h3 id="atoms">Atoms</h3>
-<p>An LTL formula is defined over a set of <em>atoms</em>.
+<p>An LTLf formula is defined over a set of <em>atoms</em>.
 In this context, an atom formula is defined by using
 the <code>Atom</code> regular language defined above:</p>
 <pre><code>LTLAtom ::= Atom</code></pre>
@@ -306,10 +341,21 @@ Release       ::= &quot;R&quot; | &quot;V&quot;
 StrongRelease ::= &quot;M&quot;
 Eventually    ::= &quot;F&quot;
 Always        ::= &quot;G&quot;</code></pre>
+<h3 id="special-formulae">Special Formulae</h3>
+<p>Special LTLf formulae are:</p>
+<ul>
+<li><code>last</code>, meaning “the last step of the trace”, semantically equivalent to <code>X(false)</code>;</li>
+<li><code>end</code>, meaning “the end of the trace”, semantically equivalent to <code>G(false)</code>.</li>
+</ul>
+<p>In EBNF format:</p>
+<pre><code>Last ::= &quot;last&quot;
+End  ::= &quot;end&quot;</code></pre>
 <h3 id="grammar">Grammar</h3>
 <pre><code>ltl_formula ::= LTLAtom
-                | True
-                | False
+                | PropBooleans
+                | LogicBooleans
+                | Last
+                | End
                 | LeftParen ltl_formula RightParen 
                 | Not ltl_formula 
                 | ltl_formula And ltl_formula
@@ -326,8 +372,7 @@ Always        ::= &quot;G&quot;</code></pre>
                 | WeakNext ltl_formula
                 | Next ltl_formula</code></pre>
 <p>For the semantics of these operators,
-we refer to <span class="citation" data-cites="MY0lZLsU">[<a href="#ref-MY0lZLsU" role="doc-biblioref">1</a>]</span> for the
-infinite setting, and <span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>
+we refer to <span class="citation" data-cites="1OF95HV9">[<a href="#ref-1OF95HV9" role="doc-biblioref">3</a>]</span>
 for the finite setting.</p>
 <h3 id="precedence-and-associativity-of-operators">Precedence and associativity of operators</h3>
 <p>The precedence and associativity of the LTL operators are
@@ -378,10 +423,10 @@ are omitted.</p>
 </tbody>
 </table>
 </center>
-<h2 id="ldl">LDL</h2>
-<p>In this section, we specify a grammar for LDL.</p>
+<h2 id="ldlf">LDLf</h2>
+<p>In this section, we specify a grammar for LDLf.</p>
 <h3 id="temporal-operators-1">Temporal operators</h3>
-<p>LDL supports two temporal operators:</p>
+<p>LDLf supports two temporal operators:</p>
 <ul>
 <li><em>Diamond</em> operator: <code>&lt;regex&gt;ldl_formula</code>;</li>
 <li><em>Box</em> operator: <code>[regex]ldl_formula</code>;</li>
@@ -391,7 +436,7 @@ are omitted.</p>
 RightDiam ::= &quot;&gt;&quot;
 LeftBox   ::= &quot;[&quot;
 RightBox  ::= &quot;]&quot;</code></pre>
-<p>In EBNF format, an LDL formula is defined as follows:</p>
+<p>In EBNF format, an LDLf formula is defined as follows:</p>
 <pre><code>ldl_formula ::= TT
               | FF
               | LeftParen ldl_formula RightParen
@@ -495,32 +540,211 @@ are omitted.</p>
 </tbody>
 </table>
 </center>
+<h2 id="pltlf">PLTLf</h2>
+<p>In this section, we specify a grammar for PLTLf.</p>
+<h3 id="atoms-1">Atoms</h3>
+<p>A PLTLf formula is defined over a set of <em>atoms</em>.
+In this context, an atom formula is defined by using
+the <code>Atom</code> regular language defined above:</p>
+<pre><code>PLTLAtom ::= Atom</code></pre>
+<h3 id="temporal-operators-2">Temporal operators</h3>
+<p>Here we specify the regular languages for the temporal operators.</p>
+<ul>
+<li>Before: <code>Y</code>;</li>
+<li>Since: <code>S</code>;</li>
+<li>Once: <code>O</code>;</li>
+<li>Historically <code>H</code></li>
+</ul>
+<p>In EBNF format:</p>
+<pre><code>Before       ::= &quot;Y&quot;
+Since        ::= &quot;S&quot;
+Once         ::= &quot;O&quot;
+Historically ::= &quot;H&quot;</code></pre>
+<h3 id="special-formulae-1">Special Formulae</h3>
+<p>Special PLTLf formulae are:</p>
+<ul>
+<li><code>first</code>, meaning “the first step of the trace”, semantically equivalent to <code>!B(true)</code>;</li>
+<li><code>start</code>, meaning “the start of the trace”, semantically equivalent to <code>H(false)</code>.</li>
+</ul>
+<p>In EBNF format:</p>
+<pre><code>First ::= &quot;first&quot;
+Start ::= &quot;start&quot;</code></pre>
+<h3 id="grammar-1">Grammar</h3>
+<pre><code>pltl_formula ::= PLTLAtom
+                 | PropBooleans
+                 | LogicBooleans
+                 | First
+                 | Start
+                 | LeftParen pltl_formula RightParen 
+                 | Not pltl_formula 
+                 | pltl_formula And pltl_formula
+                 | pltl_formula Or pltl_formula
+                 | pltl_formula Impl pltl_formula
+                 | pltl_formula Equiv pltl_formula
+                 | pltl_formula Xor pltl_formula
+                 | pltl_formula Since pltl_formula
+                 | Once pltl_formula
+                 | Historically pltl_formula
+                 | Before pltl_formula</code></pre>
+<p>For the semantics of these operators for the finite setting,
+we refer to <span class="citation" data-cites="5SVSg4uI">[<a href="#ref-5SVSg4uI" role="doc-biblioref">6</a>]</span>.</p>
+<h3 id="precedence-and-associativity-of-operators-2">Precedence and associativity of operators</h3>
+<p>The precedence and associativity of the LTL operators are
+described by the following table (priorities from lowest to highest).
+For brevity, aliases for boolean operators
+are omitted.</p>
+<center>
+<table>
+<thead>
+<tr class="header">
+<th>associativity</th>
+<th>operators</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>right</td>
+<td><code>-&gt;</code>, <code>&lt;-&gt;</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>^</code></td>
+</tr>
+<tr class="odd">
+<td>left</td>
+<td><code>|</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>&amp;</code></td>
+</tr>
+<tr class="odd">
+<td>right</td>
+<td><code>S</code></td>
+</tr>
+<tr class="even">
+<td>right</td>
+<td><code>O</code>, <code>H</code></td>
+</tr>
+<tr class="odd">
+<td>right</td>
+<td><code>B</code></td>
+</tr>
+<tr class="even">
+<td>right</td>
+<td><code>!</code></td>
+</tr>
+</tbody>
+</table>
+</center>
+<h2 id="pldlf">PLDLf</h2>
+<p>In this section, we specify a grammar for PLDLf.</p>
+<h3 id="temporal-operators-3">Temporal operators</h3>
+<p>PLDLf supports two temporal operators:</p>
+<ul>
+<li><em>Backward diamond</em> operator: <code>&lt;&lt;regex&gt;&gt;pldl_formula</code>;</li>
+<li><em>Backward box</em> operator: <code>[[regex]]pldl_formula</code>;</li>
+</ul>
+<p><code>regex</code> is the same as defined for LDLf.</p>
+<pre><code>LeftBackwardDiam  ::= &quot;&lt;&lt;&quot;
+RightBackwardDiam ::= &quot;&gt;&gt;&quot;
+LeftBackwardBox   ::= &quot;[[&quot;
+RightBackwardBox  ::= &quot;]]&quot;</code></pre>
+<p>In EBNF format, a PLDLf formula is defined as follows:</p>
+<pre><code>pldl_formula ::= TT
+               | FF
+               | LeftParen pldl_formula RightParen
+               | Not pldl_formula 
+               | pldl_formula And pldl_formula
+               | pldl_formula Or pldl_formula
+               | pldl_formula Impl pldl_formula
+               | pldl_formula Equiv pldl_formula
+               | LeftBackwardDiam regex RightBackwardDiam pldl_formula
+               | LeftBackwardBox regex RightBackwardBox pldl_formula</code></pre>
+<p>For the semantics of the operators,
+we refer to <span class="citation" data-cites="5SVSg4uI">[<a href="#ref-5SVSg4uI" role="doc-biblioref">6</a>]</span>.</p>
+<h3 id="precedence-and-associativity-of-operators-3">Precedence and associativity of operators</h3>
+<p>The precedence and associativity of the LDL operators are
+described by the following table (priorities from lowest to highest).
+For brevity, aliases for boolean operators
+are omitted.</p>
+<center>
+<table>
+<thead>
+<tr class="header">
+<th>associativity</th>
+<th>operators</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>right</td>
+<td><code>-&gt;</code>, <code>&lt;-&gt;</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>^</code></td>
+</tr>
+<tr class="odd">
+<td>left</td>
+<td><code>|</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>&amp;</code></td>
+</tr>
+<tr class="odd">
+<td>N/A</td>
+<td><code>&lt;&lt;&gt;&gt;</code>, <code>[[]]</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>;</code></td>
+</tr>
+<tr class="odd">
+<td>left</td>
+<td><code>+</code></td>
+</tr>
+<tr class="even">
+<td>left</td>
+<td><code>*</code></td>
+</tr>
+<tr class="odd">
+<td>left</td>
+<td><code>?</code></td>
+</tr>
+<tr class="even">
+<td>right</td>
+<td><code>!</code></td>
+</tr>
+</tbody>
+</table>
+</center>
 <h2 id="future-work">Future work</h2>
 <p>In future versions of this standard, we would like to add:</p>
 <ul>
 <li><code>Spot</code>-like syntactic sugars for regular expressions (SERE) and
-temporal operators <span class="citation" data-cites="K9tJcZXv q3fJrjql">[<a href="#ref-K9tJcZXv" role="doc-biblioref">14</a>,<a href="#ref-q3fJrjql" role="doc-biblioref">23</a>]</span>;</li>
+temporal operators <span class="citation" data-cites="K9tJcZXv q3fJrjql">[<a href="#ref-K9tJcZXv" role="doc-biblioref">14</a>,<a href="#ref-q3fJrjql" role="doc-biblioref">24</a>]</span>;</li>
 <li>Compatibility with the PSL standard <span class="citation" data-cites="1DqpX0IVA">[<a href="#ref-1DqpX0IVA" role="doc-biblioref">13</a>]</span>;</li>
 <li>Support full Unicode characters, so
 to use UTF-8 characters
 like <span class="math inline">\(\circ\)</span> (U+25CB) for the Next operator
 and <span class="math inline">\(\diamond\)</span> (U+25C7) for the Eventually operator etc.
 as alternative symbols.</li>
-<li>Grammars for PLTL and PLDL.</li>
 </ul>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-1GURnqq7x">
+<p>1. <strong>A Survey on Temporal Logics</strong> <br />
+Savas Konur<br />
+(2010-05) <a href="http://arxiv.org/abs/1005.3199v3">http://arxiv.org/abs/1005.3199v3</a></p>
+</div>
 <div id="ref-MY0lZLsU">
-<p>1. <strong>The temporal logic of programs</strong> <br />
+<p>2. <strong>The temporal logic of programs</strong> <br />
 Amir Pnueli<br />
 <em>18th Annual Symposium on Foundations of Computer Science (sfcs 1977)</em> (1977-10) <a href="http://dx.doi.org/10.1109/sfcs.1977.32">http://dx.doi.org/10.1109/sfcs.1977.32</a> <br />
 DOI: <a href="https://doi.org/10.1109/sfcs.1977.32">10.1109/sfcs.1977.32</a></p>
-</div>
-<div id="ref-SgNUEvas">
-<p>2. <strong>The rise and fall of LTL</strong> <br />
-Moshe Y Vardi<br />
-<em>GandALF</em> (2011)</p>
 </div>
 <div id="ref-1OF95HV9">
 <p>3. <strong>Linear Temporal Logic and Linear Dynamic Logic on Finite Traces</strong> <br />
@@ -528,21 +752,21 @@ Giuseppe De Giacomo, Moshe Y. Vardi<br />
 <em>Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence</em> (2013) <a href="http://dl.acm.org/citation.cfm?id=2540128.2540252">http://dl.acm.org/citation.cfm?id=2540128.2540252</a> <br />
 ISBN: <a href="https://worldcat.org/isbn/978-1-57735-633-2">978-1-57735-633-2</a></p>
 </div>
-<div id="ref-1GURnqq7x">
-<p>4. <strong>A Survey on Temporal Logics</strong> <br />
-Savas Konur<br />
-(2010-05) <a href="http://arxiv.org/abs/1005.3199v3">http://arxiv.org/abs/1005.3199v3</a></p>
+<div id="ref-SgNUEvas">
+<p>4. <strong>The rise and fall of LTL</strong> <br />
+Moshe Y Vardi<br />
+<em>GandALF</em> (2011)</p>
+</div>
+<div id="ref-1BGowXSUK">
+<p>5. <strong>LTLf/LDLf Non-Markovian Rewards</strong> <br />
+Ronen Brafman, Giuseppe De Giacomo, Fabio Patrizi<br />
+(2018) <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17342">https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17342</a></p>
 </div>
 <div id="ref-5SVSg4uI">
-<p>5. <strong>Pure-Past Linear Temporal and Dynamic Logic on Finite Traces</strong> <br />
+<p>6. <strong>Pure-Past Linear Temporal and Dynamic Logic on Finite Traces</strong> <br />
 Giuseppe De Giacomo, Antonio Di Stasio, Francesco Fuggitti, Sasha Rubin<br />
 <em>Twenty-Ninth International Joint Conference on Artificial Intelligence and Seventeenth Pacific Rim International Conference on Artificial Intelligence IJCAI-PRICAI-20</em> (2020-07) <a href="http://dx.doi.org/10.24963/ijcai.2020/690">http://dx.doi.org/10.24963/ijcai.2020/690</a> <br />
 DOI: <a href="https://doi.org/10.24963/ijcai.2020/690">10.24963/ijcai.2020/690</a> · ISBN: <a href="https://worldcat.org/isbn/%5B&#39;9780999241165&#39;%5D">['9780999241165']</a></p>
-</div>
-<div id="ref-1BGowXSUK">
-<p>6. <strong>LTLf/LDLf Non-Markovian Rewards</strong> <br />
-Ronen Brafman, Giuseppe De Giacomo, Fabio Patrizi<br />
-(2018) <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17342">https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17342</a></p>
 </div>
 <div id="ref-14SRO4NjV">
 <p>7. <strong>Synthesis for LTL and LDL on Finite Traces</strong> <br />
@@ -630,59 +854,64 @@ Marco Favorito<br />
 Francesco Fuggitti<br />
 <em>WhiteMech</em> (2018) <a href="https://github.com/whitemech/LTLf2DFA">https://github.com/whitemech/LTLf2DFA</a></p>
 </div>
+<div id="ref-Lv3eMyUa">
+<p>23. <strong>Compositional Approach to Translate LTLf/LDLf into Deterministic Finite Automata</strong> <br />
+Giuseppe De Giacomo, Marco Favorito<br />
+<em>Proceedings of the International Conference on Automated Planning and Scheduling (to appear)</em> (2021)</p>
+</div>
 <div id="ref-q3fJrjql">
-<p>23. <strong>A high-level LTL synthesis format: TLSF v1. 1</strong> <br />
+<p>24. <strong>A high-level LTL synthesis format: TLSF v1. 1</strong> <br />
 Swen Jacobs, Felix Klein, Sebastian Schirmer<br />
 <em>arXiv preprint arXiv:1604.02284</em> (2016)</p>
 </div>
 <div id="ref-gB57ast8">
-<p>24. <strong>The syntax and semantics of the proposed international algebraic language of the Zurich ACM-GAMM conference</strong> <br />
+<p>25. <strong>The syntax and semantics of the proposed international algebraic language of the Zurich ACM-GAMM conference</strong> <br />
 John W Backus<br />
 <em>Proceedings of the International Comference on Information Processing, 1959</em> (1959)</p>
 </div>
 <div id="ref-G296g60u">
-<p>25. <strong>Extensible Markup Language (XML) 1.0 (Fifth Edition)</strong> <br />
+<p>26. <strong>Extensible Markup Language (XML) 1.0 (Fifth Edition)</strong> <br />
 W3C<br />
 (2008) <a href="https://www.w3.org/TR/xml/">https://www.w3.org/TR/xml/</a></p>
 </div>
 <div id="ref-bEpoSxy4">
-<p>26. <strong>ISO/IEC 14977: 1996 (E)</strong> <br />
+<p>27. <strong>ISO/IEC 14977: 1996 (E)</strong> <br />
 Extended BNF ISO<br />
 <em>ISO: Geneva</em> (1996)</p>
 </div>
 <div id="ref-tLF2Ebsw">
-<p>27. <strong>Don’t Use ISO/IEC 14977 Extended Backus-Naur Form (EBNF)</strong> <br />
+<p>28. <strong>Don’t Use ISO/IEC 14977 Extended Backus-Naur Form (EBNF)</strong> <br />
 David Wheeler<br />
 (2020) <a href="https://dwheeler.com/essays/dont-use-iso-14977-ebnf.html">https://dwheeler.com/essays/dont-use-iso-14977-ebnf.html</a></p>
 </div>
 <div id="ref-g9olcqWk">
-<p>28. <strong>BNF was here: what have we done about the unnecessary diversity of notation for syntactic definitions</strong> <br />
+<p>29. <strong>BNF was here: what have we done about the unnecessary diversity of notation for syntactic definitions</strong> <br />
 Vadim Zaytsev<br />
 <em>Proceedings of the 27th Annual ACM Symposium on Applied Computing</em> (2012)</p>
 </div>
 <div id="ref-ab4NKd0d">
-<p>29. <strong>Key words for use in RFCs to Indicate Requirement Levels</strong> <br />
+<p>30. <strong>Key words for use in RFCs to Indicate Requirement Levels</strong> <br />
 Scott Bradner<br />
 <em>RFC2119</em> (1997)</p>
 </div>
 <div id="ref-15qqhX4dZ">
-<p>30. <strong>Information technology—Universal coded character set</strong> <br />
+<p>31. <strong>Information technology—Universal coded character set</strong> <br />
 ISO/IEC<br />
 <em>International Organization for Standardization</em> (2020)</p>
 </div>
 <div id="ref-TjjbfWlM">
-<p>31. <strong>The Unicode Standard, Version 13.0.0</strong> <br />
+<p>32. <strong>The Unicode Standard, Version 13.0.0</strong> <br />
 The Unicode Consortium<br />
 (2020) <a href="https://www.unicode.org/versions/Unicode13.0.0/">https://www.unicode.org/versions/Unicode13.0.0/</a> <br />
 ISBN: <a href="https://worldcat.org/isbn/978-1-936213-26-9">978-1-936213-26-9</a></p>
 </div>
 <div id="ref-r8oAGYhf">
-<p>32. <strong>Semantic Versioning for Documents 1.0.0</strong> <br />
+<p>33. <strong>Semantic Versioning for Documents 1.0.0</strong> <br />
 Nils Tekampe<br />
 <em>SemVerDoc</em> (2018) <a href="https://semverdoc.org/semverdoc.html">https://semverdoc.org/semverdoc.html</a></p>
 </div>
 <div id="ref-z3JdY0ZA">
-<p>33. <strong>Semantic Versioning 2.0.0</strong> <br />
+<p>34. <strong>Semantic Versioning 2.0.0</strong> <br />
 Tom Preston-Werner<br />
 <em>Semantic Versioning</em> (2011) <a href="https://semver.org/">https://semver.org/</a></p>
 </div>
