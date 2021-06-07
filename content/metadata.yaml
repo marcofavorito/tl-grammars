@@ -1,10 +1,11 @@
 ---
-title: Standard Grammars for Temporal Logics
-version: v0.1.1
+title: A Standard Grammar for Temporal Logics on Finite Traces
+version: v0.2.0
 keywords:
-  - linear temporal logic
-  - linear dynamic logic
-  - standard grammar
+  - linear temporal logic on finite traces
+  - linear dynamic logic on finite traces
+  - past linear temporal logic on finite traces
+  - past linear dynamic logic on finite traces
 lang: en-US
 authors:
   - github: marcofavorito
